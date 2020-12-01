@@ -96,3 +96,18 @@ html {
       color: #F0C300;
       cursor: default;
   }
+
+ 
+
+  /* #loadingAnimation {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-75px);
+    width: 150px;
+    height: 150px;
+    border: 16px solid #f3f3f3;
+    border-radius: 48%;
+    border-top: 16px solid orange;
+    animation: spin 2s linear infinite;
+  } */
