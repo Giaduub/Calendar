@@ -22,7 +22,7 @@ var myCase = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15',
 shuffle(myCase);
 
 var messages = [
-	["images/ectoplasma.gif", "Ectoplasma"],
+	["images/ectoplasma.gif", "Ectoplasma",],
 	["images/tortank.gif", ],
 	["images/dracaufeu.gif", ],
 	["images/magicarpeSh.gif"],

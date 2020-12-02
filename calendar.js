@@ -1,7 +1,12 @@
 var myCal = document.getElementById("adventCal");
 var currentDate = new Date();
 
+
+
+  
+
 function Door(calendar, box,j) {
+	
     this.jour = j;
 	this.picture = messages[j - 1][0];
 	this.name = messages[j - 1][1];
@@ -40,6 +45,20 @@ function Door(calendar, box,j) {
 		} else {
 			
 			innerNode.onclick = function() {
+				  
+					/*
+					** MUSIQUE DE NOël
+					*/
+				  
+					let audioPlayer = document.createElement("audio");
+
+					audioPlayer.src = "wow.mp3";
+					audioPlayer.type = 'audio/mpeg';
+					audioPlayer.autoplay = true;
+					audioPlayer.style = "display:none;";
+				  
+					document.body.appendChild(audioPlayer);
+				  
                 innerPicture.style.display = "block";
 				return false;
 			}
