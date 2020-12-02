@@ -97,6 +97,18 @@ html {
       cursor: default;
   }
 
+.pepito{
+  position: relative;
+  z-index: 1;
+}
+
+.pokemon{
+  position: absolute;
+  z-index: 2;
+}
+
+ 
+
  
 
   /* #loadingAnimation {

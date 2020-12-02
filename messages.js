@@ -1,5 +1,5 @@
 var messages = [
-	["images/ectoplasma.gif",],
+	["images/ectoplasma.gif", "Ectoplasma"],
 	["images/tortank.gif", ],
 	["Christmas waves a magic wand over this world, and behold, everything is softer and more beautiful.", "Norman Vincent Peale"],
 	["Blessed is the season which engages the whole world in a conspiracy of love.", "Hamilton Wright Mabie"],
