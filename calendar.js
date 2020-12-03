@@ -8,8 +8,7 @@ var currentDate = new Date();
 function Door(calendar, box,j) {
 	
     this.jour = j;
-	this.picture = messages[j - 1][0];
-	this.music = messages[j - 1][1];
+	this.picture = pokemon[j - 1][0];
 	this.width = ((calendar.width - 0.1 * calendar.width) / 4) * 0.95;
 	this.height = ((calendar.height - 0.1 * calendar.height) / 6) * 0.95;
 	// this.adventMessage = 'Day ' + this.jour + ' of Advent\n\n' + '"' + messages[j - 1][0] + '"\n\n\t' + 'by ' + messages[j - 1][1] + '\n\n';
@@ -32,7 +31,9 @@ function Door(calendar, box,j) {
         document.getElementById("adventDoors").appendChild(innerPicture);
         innerPicture.style.cssText = "width: " + this.width + "px; height: " + this.height + "px; top: " + this.y + "px; left: " + this.x + "px;";
         innerPicture.innerHTML = "<img class='pepito' src="+this.picture+" width='100%' height='100%'>";
-        innerPicture.style.display = "none";
+		innerPicture.style.display = "none";
+		
+
         
         console.log(this.picture);
         
@@ -49,10 +50,10 @@ function Door(calendar, box,j) {
 					/*
 					** MUSIQUE DE NOël
 					*/
-				  
+				    let music = pokemon[j - 1][1];
 					let audioPlayer = document.createElement("audio");
 
-					audioPlayer.src = "wow.mp3";
+					audioPlayer.src = music;
 					audioPlayer.type = 'audio/mpeg';
 					audioPlayer.autoplay = true;
 					audioPlayer.style = "display:none;";
