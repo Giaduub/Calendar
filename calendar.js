@@ -30,8 +30,9 @@ function Door(calendar, box,j) {
 		var innerPicture = document.createElement("li");
         document.getElementById("adventDoors").appendChild(innerPicture);
         innerPicture.style.cssText = "width: " + this.width + "px; height: " + this.height + "px; top: " + this.y + "px; left: " + this.x + "px;";
-        innerPicture.innerHTML = "<img class='pepito' src="+this.picture+" width='100%' height='100%'>";
-		innerPicture.style.display = "none";
+		innerPicture.innerHTML = "<img class='pepito' src="+this.picture+" width='100%' height='100%'>";
+		if(!localStorage.getItem("jour"+j+"")){innerPicture.style.display='none';}
+		else{innerPicture.style.display = "block";}
 		
 
         
@@ -59,7 +60,7 @@ function Door(calendar, box,j) {
 					audioPlayer.style = "display:none;";
 				  
 					document.body.appendChild(audioPlayer);
-				  
+					localStorage.setItem("jour"+j+"",j);
                 innerPicture.style.display = "block";
 				return false;
 			}
