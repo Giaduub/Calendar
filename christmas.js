@@ -59,6 +59,7 @@ function enableChristmasMode() {
   audioPlayer.type = 'audio/mpeg';
   audioPlayer.autoplay = true;
   audioPlayer.style = "display:none;";
+  audioPlayer.volume = 0.15;
 
   document.body.appendChild(audioPlayer);
 

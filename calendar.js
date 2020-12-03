@@ -31,6 +31,7 @@ function Door(calendar, box,j) {
         document.getElementById("adventDoors").appendChild(innerPicture);
         innerPicture.style.cssText = "width: " + this.width + "px; height: " + this.height + "px; top: " + this.y + "px; left: " + this.x + "px;";
 		innerPicture.innerHTML = "<img class='pepito' src="+this.picture+" width='100%' height='100%'>";
+		// Verif cookie
 		if(!localStorage.getItem("jour"+j+"")){innerPicture.style.display='none';}
 		else{innerPicture.style.display = "block";}
 		
