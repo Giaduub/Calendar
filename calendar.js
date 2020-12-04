@@ -5,13 +5,12 @@ var currentDate = new Date();
 
   
 
-function Door(calendar, box,j) {
+function Door(calendar,box,j) {
 	
     this.jour = j;
 	this.picture = pokemon[j - 1][0];
 	this.width = ((calendar.width - 0.1 * calendar.width) / 4) * 0.95;
 	this.height = ((calendar.height - 0.1 * calendar.height) / 6) * 0.95;
-	// this.adventMessage = 'Day ' + this.jour + ' of Advent\n\n' + '"' + messages[j - 1][0] + '"\n\n\t' + 'by ' + messages[j - 1][1] + '\n\n';
 	this.x = ( 0.04 * calendar.width + ((box- 1) % 4) * (1.1 * this.width) );
 	this.y = - ( 0.96 * calendar.height - Math.floor((box - 1) / 4) * (1.1 * this.height) );
 
